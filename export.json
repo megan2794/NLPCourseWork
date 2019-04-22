@@ -1,0 +1,158 @@
+[
+  {
+    "_id": "bec6a220-5e64-11e9-9bb3-81df76d00002",
+    "_type": "dashboard",
+    "_source": {
+      "title": "NLP Final Project - Topics By Year",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"1\",\"w\":24,\"x\":0,\"y\":0},\"id\":\"f3c01ad0-5e62-11e9-9bb3-81df76d00002\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.7.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"2\",\"w\":24,\"x\":24,\"y\":15},\"id\":\"5ac61e10-5e62-11e9-9bb3-81df76d00002\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.7.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"3\",\"w\":24,\"x\":0,\"y\":15},\"id\":\"9de85070-5e60-11e9-9bb3-81df76d00002\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.7.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"4\",\"w\":24,\"x\":24,\"y\":0},\"id\":\"de450f50-5e60-11e9-9bb3-81df76d00002\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.7.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"5\",\"w\":24,\"x\":0,\"y\":30},\"id\":\"3d68c320-608a-11e9-9f0a-9336fceecf61\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.7.0\"}]",
+      "optionsJSON": "{\"darkTheme\":true,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "a1c566c0-5e64-11e9-9bb3-81df76d00002",
+    "_type": "dashboard",
+    "_source": {
+      "title": "NLP Final Project - Top Topics",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"1\",\"w\":24,\"x\":0,\"y\":0},\"id\":\"de450f50-5e60-11e9-9bb3-81df76d00002\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.7.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"2\",\"w\":24,\"x\":24,\"y\":0},\"id\":\"4cc3d390-6090-11e9-9f0a-9336fceecf61\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.7.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"3\",\"w\":24,\"x\":0,\"y\":15},\"id\":\"d4757c90-608f-11e9-9f0a-9336fceecf61\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.7.0\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"4\",\"w\":24,\"x\":24,\"y\":15},\"id\":\"3d68c320-608a-11e9-9f0a-9336fceecf61\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.7.0\"}]",
+      "optionsJSON": "{\"darkTheme\":true,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "9de85070-5e60-11e9-9bb3-81df76d00002",
+    "_type": "visualization",
+    "_source": {
+      "title": "Number of Topics by Registration Year",
+      "visState": "{\"title\":\"Number of Topics by Registration Year\",\"type\":\"line\",\"params\":{\"type\":\"line\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Number of Registered Topics\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"normal\",\"data\":{\"label\":\"Number of Registered Topics\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"OVER_ARCHING_TOPIC.keyword\",\"customLabel\":\"Number of Registered Topics\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"REGISTRATION_YEAR\",\"timeRange\":{\"from\":\"now-1y\",\"to\":\"now\",\"mode\":\"quick\"},\"useNormalizedEsInterval\":true,\"interval\":\"y\",\"time_zone\":\"America/New_York\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Registration Year\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"14d86c70-5e60-11e9-9bb3-81df76d00002\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "7d5c4700-5e68-11e9-9bb3-81df76d00002",
+    "_type": "visualization",
+    "_source": {
+      "title": "Topics by Document",
+      "visState": "{\"title\":\"Topics by Document\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greens\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"OVER_ARCHING_TOPIC.keyword\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"DOC_NUM.keyword\",\"size\":40,\"order\":\"desc\",\"orderBy\":\"_key\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"OVER_ARCHING_TOPIC.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 0.25\":\"rgb(247,252,245)\",\"0.25 - 0.5\":\"rgb(199,233,192)\",\"0.5 - 0.75\":\"rgb(116,196,118)\",\"0.75 - 1\":\"rgb(35,139,69)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"14d86c70-5e60-11e9-9bb3-81df76d00002\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "f3c01ad0-5e62-11e9-9bb3-81df76d00002",
+    "_type": "visualization",
+    "_source": {
+      "title": "Top Topics Heat Map",
+      "visState": "{\"title\":\"Top Topics Heat Map\",\"type\":\"heatmap\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"colorSchema\":\"Reds\",\"colorsNumber\":5,\"colorsRange\":[],\"enableHover\":true,\"invertColors\":false,\"legendPosition\":\"right\",\"percentageMode\":false,\"setColorRange\":false,\"times\":[],\"type\":\"heatmap\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"color\":\"#555\",\"overwriteColor\":false,\"rotate\":270,\"show\":true},\"scale\":{\"defaultYExtents\":true,\"type\":\"linear\"},\"show\":false,\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Count of Times Topic is Documented\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"OVER_ARCHING_TOPIC.keyword\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Count of Times Topic is Documented\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"REGISTRATION_YEAR\",\"timeRange\":{\"from\":\"now-7d\",\"to\":\"now\",\"mode\":\"quick\"},\"useNormalizedEsInterval\":true,\"interval\":\"y\",\"time_zone\":\"America/New_York\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Registration Year\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"1 - 4\":\"rgb(255,245,240)\",\"4 - 7\":\"rgb(253,202,181)\",\"7 - 10\":\"rgb(252,138,106)\",\"10 - 13\":\"rgb(241,68,50)\",\"13 - 16\":\"rgb(188,20,26)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"14d86c70-5e60-11e9-9bb3-81df76d00002\",\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "3d68c320-608a-11e9-9f0a-9336fceecf61",
+    "_type": "visualization",
+    "_source": {
+      "title": "Topics Over the Years - Count in Documents",
+      "visState": "{\"title\":\"Topics Over the Years - Count in Documents\",\"type\":\"line\",\"params\":{\"type\":\"line\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Number of Times Topic Documented\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"normal\",\"data\":{\"label\":\"Number of Times Topic Documented\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Number of Times Topic Documented\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"Registration Year\",\"timeRange\":{\"from\":\"now-7d\",\"to\":\"now\",\"mode\":\"quick\"},\"useNormalizedEsInterval\":true,\"interval\":\"y\",\"time_zone\":\"America/New_York\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Registration Year\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"significant_terms\",\"schema\":\"group\",\"params\":{\"field\":\"OVER_ARCHING_TOPIC.keyword\",\"size\":10}}]}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":true}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"14d86c70-5e60-11e9-9bb3-81df76d00002\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "d4757c90-608f-11e9-9f0a-9336fceecf61",
+    "_type": "visualization",
+    "_source": {
+      "title": "Bubble Chart - Topics By Year",
+      "visState": "{\"title\":\"Bubble Chart - Topics By Year\",\"type\":\"line\",\"params\":{\"type\":\"line\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"},\"valueAxis\":null},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\",\"defaultYExtents\":false,\"setYExtents\":false},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count of Topics\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"normal\",\"data\":{\"label\":\"Count of Topics\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":false,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"Registration Year\",\"timeRange\":{\"from\":\"now-7d\",\"to\":\"now\",\"mode\":\"quick\"},\"useNormalizedEsInterval\":true,\"interval\":\"y\",\"time_zone\":\"America/New_York\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Registration Year\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"count\",\"schema\":\"radius\",\"params\":{}},{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"OVER_ARCHING_TOPIC.keyword\",\"customLabel\":\"Count of Topics\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"14d86c70-5e60-11e9-9bb3-81df76d00002\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "4cc3d390-6090-11e9-9f0a-9336fceecf61",
+    "_type": "visualization",
+    "_source": {
+      "title": "Number of Documents a Topic Appears in",
+      "visState": "{\"title\":\"Number of Documents a Topic Appears in\",\"type\":\"gauge\",\"params\":{\"type\":\"gauge\",\"addTooltip\":true,\"addLegend\":true,\"isDisplayWarning\":false,\"gauge\":{\"verticalSplit\":false,\"extendRange\":true,\"percentageMode\":false,\"gaugeType\":\"Arc\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"colorSchema\":\"Greens\",\"gaugeColorMode\":\"Labels\",\"colorsRange\":[{\"from\":0,\"to\":50},{\"from\":50,\"to\":90},{\"from\":90,\"to\":100}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":true,\"labels\":false,\"color\":\"#333\"},\"type\":\"meter\",\"style\":{\"bgWidth\":0.9,\"width\":0.9,\"mask\":false,\"bgMask\":false,\"maskBars\":50,\"bgFill\":\"#eee\",\"bgColor\":false,\"subText\":\"\",\"fontSize\":60,\"labelColor\":true}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"DOC_NUM.keyword\",\"customLabel\":\"Number of Documents About the Topic\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"OVER_ARCHING_TOPIC.keyword\",\"size\":3,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 50\":\"rgb(247,252,245)\",\"50 - 90\":\"rgb(116,196,118)\",\"90 - 100\":\"rgb(0,68,27)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"14d86c70-5e60-11e9-9bb3-81df76d00002\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "5ac61e10-5e62-11e9-9bb3-81df76d00002",
+    "_type": "visualization",
+    "_source": {
+      "title": "Number of Regulations by Year - Pie",
+      "visState": "{\"title\":\"Number of Regulations by Year - Pie\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"OVER_ARCHING_TOPIC.keyword\",\"customLabel\":\"\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"Registration Year\",\"timeRange\":{\"from\":\"now-7d\",\"to\":\"now\",\"mode\":\"quick\"},\"useNormalizedEsInterval\":true,\"interval\":\"y\",\"time_zone\":\"America/New_York\",\"drop_partials\":false,\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"14d86c70-5e60-11e9-9bb3-81df76d00002\",\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "de450f50-5e60-11e9-9bb3-81df76d00002",
+    "_type": "visualization",
+    "_source": {
+      "title": "Bag of Topics - All Years",
+      "visState": "{\"title\":\"Bag of Topics - All Years\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":18,\"maxFontSize\":46,\"showLabel\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"OVER_ARCHING_TOPIC.keyword\",\"size\":30,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Top 30 Topics\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"14d86c70-5e60-11e9-9bb3-81df76d00002\",\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "14d86c70-5e60-11e9-9bb3-81df76d00002",
+    "_type": "index-pattern",
+    "_source": {
+      "title": "nlp.term.project*",
+      "timeFieldName": "@timestamp",
+      "fields": "[{\"name\":\"@timestamp\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"@version\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"@version.keyword\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"CONSOLIDATION_YEAR\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"Consolidation Year\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"DOC_NUM\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"DOC_NUM.keyword\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"INSTRUMENT_NUM\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"INSTRUMENT_NUM.keyword\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"LONG_TITLE\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"LONG_TITLE.keyword\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"MODIFIED_YEAR\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"Modified Year\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"OVER_ARCHING_TOPIC\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"OVER_ARCHING_TOPIC.keyword\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"REGISTRATION_YEAR\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"REG_MAKER\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"REG_MAKER.keyword\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"Registration Year\",\"type\":\"date\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"TOPIC_1\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"TOPIC_1.keyword\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"TOPIC_2\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"TOPIC_2.keyword\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"_id\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_index\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_score\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_source\",\"type\":\"_source\",\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"host\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"host.keyword\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"message\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"message.keyword\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"path\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"path.keyword\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"type\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"type.keyword\",\"type\":\"string\",\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true}]"
+    },
+    "_migrationVersion": {
+      "index-pattern": "6.5.0"
+    }
+  }
+]
