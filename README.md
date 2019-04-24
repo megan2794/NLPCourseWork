@@ -3,7 +3,8 @@
 Code Contributed by Megan Parker and Muhammad Saleem.
 
 # Part 1: Topic Modelling in Python
-Python (Gensim) was used to perform Latent Dirichlet Allocation (LDA) on government regulations Hierarchical Dirichlet Process (HDP) was used to determine the optimal number of topics.
+Python (Gensim) was used for Hierarchical Dirichlet Process (HDP) to determine the optimal number of topics, then topics were determined using Latent Dirichlet Allocation (LDA) on government regulations. This code is in Project_code.ipynb.
+
 # Part 2: Visualizations for Topic Modeling Using Elasticsearch/ELK Stack
 Logstash was used to ingest the data from the topics determined in Part 1 and the data is stored in elastic for fast aggregations. Then kibana is used to provide visualizations on the data.
 
